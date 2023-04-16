@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+<script >
+    x=new Date()
+jour=x.getDate()
+moins=x.getMonth() +1
+annee=x.getFullYear()
+heure=x.getHours()
+minute=x.getMinutes()
+seconde=x.getSeconds()
+    document.write("<p>nous sommes "+jour+"/"+moins+"/"+annee+"il est"+ heure+"h"+ minute+"min"+seconde+"sec</p>")
+
+function data()
+{
+    var jours=new Array("dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi");
+    d=date=new Date();
+    document.write("nous sommes :" ,jours[d.getDay()] );
+}
+</script>
+<button onclick="data()">click me</button>
+</body>
+</html>

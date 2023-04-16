@@ -1,0 +1,15 @@
+<HTML>
+    <HEAD>
+        <TITLE>Liste de sélection</TITLE>
+    </HEAD>
+    <BODY>
+        <FORM NAME="F">
+            <SELECT NAME="liste" onChange='F.resultat.value+=F.liste.options[F.liste.selectedIndex].value'> 
+                <OPTION VALUE="matin " >Matin </OPTION>
+                <OPTION VALUE="midi ">Midi </OPTION>
+                <OPTION VALUE="soir ">Soir </OPTION>
+            </SELECT>
+            <INPUT TYPE="TEXT"  SIZE=40 NAME="resultat" VALUE="Vous avez sélectionné : " >
+        </FORM>
+    </BODY>
+</HTML>

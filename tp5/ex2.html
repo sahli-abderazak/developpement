@@ -1,0 +1,15 @@
+<HTML>
+    <HEAD>
+        <TITLE>Liste de sélection</TITLE>
+    </HEAD>
+    <BODY>
+        <FORM NAME="x">
+            <SELECT NAME="liste"> 
+                <OPTION VALUE="tunis " >tunis </OPTION>
+                <OPTION VALUE="nabeul ">nabeul </OPTION>
+                <OPTION VALUE="kef ">kef</OPTION>
+            </SELECT>
+            <INPUT TYPE="TEXT"  SIZE=40 NAME="resultat" onFocus='x.resultat.value=x.liste.options[x.liste.selectedIndex].value' VALUE="Vous avez sélectionné : " >
+        </FORM>
+    </BODY>
+</HTML>

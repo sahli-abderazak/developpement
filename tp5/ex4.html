@@ -1,0 +1,27 @@
+
+<HTML>
+    <HEAD>
+        <TITLE>Liste de sélection</TITLE>
+    </HEAD>
+    <BODY>
+        <FORM NAME="calculer" >
+            <p>N1
+            <SELECT NAME="n1"> 
+                <OPTION VALUE="1">un </OPTION>
+                <OPTION VALUE="2">deux </OPTION>
+                <OPTION VALUE="3">trois </OPTION>
+            </SELECT></p>
+            <p>N2
+            <SELECT NAME="n2"> 
+                <OPTION VALUE="1">un </OPTION>
+                <OPTION VALUE="2">deux </OPTION>
+                <OPTION VALUE="3">trois </OPTION>
+            </SELECT></p><br>
+            <input type="radio" name ="r" value="+" > plus<br>
+            <input type="radio" name ="r" value="*" > fois <br>
+            <input type="radio" name ="r" value="-" > moins<br>
+            <p>resultat :<INPUT TYPE="text"  SIZE=40 NAME="a"  onFocus="calculer.a.value=eval(calculer.n1.options[calculer.n1.selectedIndex].value + calculer.r.value + calculer.n2.options[calculer.n2.selectedIndex].value)"></p>
+            
+        </FORM>
+    </BODY>
+</HTML>

@@ -1,0 +1,61 @@
+
+.par1
+{
+    text-align: center;
+    font-size: 50px;
+}
+.imm{
+    position: absolute;
+    left:1400px;
+    top: 100px;
+}
+.lik
+{
+text-align: center;
+font-size: 30px;
+}
+.bl2{
+    position: relative;
+    left:-100px;
+}
+/* #b1
+{
+    position: absolute;
+    left:600px;
+    top:400px;
+}
+#b2
+{
+    position: absolute;
+    left:600px;
+    top:530px;
+}
+#b4
+{
+    
+    position: absolute;
+    left:600px;
+    top: 700px;
+}
+#b5
+{
+    position: absolute;
+    left:600px;
+    top:830px;
+} */
+.footer
+{
+    position: absolute;
+    left:600px;
+    top:1200px;
+}  
+.bl2{
+    position:relative;
+    top:-80px;
+    left: 500px;
+} 
+
+.block1
+{
+    border: 1px solid #ccc;
+}

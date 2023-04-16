@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Didactitiel : apprentissage nom d'animaux</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+    </head>
+    <body> 
+        <script>
+            function changer(ch,n)
+{
+    animaux = ['chien','elephant','grenouille','lion','mouton','ours','rat','renard'];
+    switch(n)
+    {
+        case 0:
+            document.images["i1"].src="./chien.JPG"
+            document.getElementById("i0").innerHTML=animaux[n];
+            break;
+        case 1:
+            document.images["i2"].src="./elephant.JPG"
+            document.getElementById("i0").innerHTML=animaux[n];
+            break;
+        case 2:
+                document.images["i3"].src="./grenouille.JPG"
+                document.getElementById("i0").innerHTML=animaux[n];
+                break;
+        case 3:
+                document.images["i4"].src="./lion1.JPG"
+                document.getElementById("i0").innerHTML=animaux[n];
+                break;
+        case 4:
+                document.images["i5"].src="./mouton.JPG"
+                document.getElementById("i0").innerHTML=animaux[n];
+                 break;
+        case 5:
+                document.images["i6"].src="./ours.JPG"
+                 document.getElementById("i0").innerHTML=animaux[n];
+                    break;
+        case 6:
+                document.images["i7"].src="./rat.JPG"
+                document.getElementById("i0").innerHTML=animaux[n];
+                break;
+        default:
+                document.images["i8"].src="./renard.JPG"
+                document.getElementById("i0").innerHTML=animaux[n];
+ 
+    }
+
+}
+function retourner(ch,n)
+{
+    animaux = ['chien','elephant','grenouille','lion','mouton','ours','rat','renard'];
+    switch(n)
+    {
+        case 0:
+            document.images["i1"].src="./chien.jpg"
+            document.getElementById("i0").innerHTML="nom";
+            break;
+        case 1:
+            document.images["i2"].src="./elephant.JPG"
+            document.getElementById("i0").innerHTML="nom";
+            break;
+        case 2:
+                document.images["i3"].src="./grenouille.JPG"
+                document.getElementById("i0").innerHTML="nom";
+                break;
+        case 3:
+                document.images["i4"].src="./lion.JPG"
+                document.getElementById("i0").innerHTML="nom";
+                break;
+        case 4:
+                document.images["i5"].src="./mouton.JPG"
+                document.getElementById("i0").innerHTML="nom";
+                 break;
+        case 5:
+                document.images["i6"].src="./ours.JPG"
+                document.getElementById("i0").innerHTML="nom";
+                    break;
+        case 6:
+                document.images["i7"].src="./rat.JPG"
+                document.getElementById("i0").innerHTML="nom";
+
+                break;
+        default:
+                document.images["i8"].src="./renard.JPG"
+                document.getElementById("i0").innerHTML="nom";
+ 
+    }
+}
+        </script>
+        <div> 
+            <h2>cliquer sur la bonne image</h2>
+            <table border="1"> 
+                <tr>
+                    <td><img src='./chien.JPG' width='100' height="100" id="i1"onMouseOver="changer('id',0)" onMouseOut="retourner('id',0)"></td>
+                    <td><img src='./elephant.JPG' width='100' height="100" id="i2" onMouseOver="changer('id',1)" onMouseOut="retourner('id',1)" ></td>
+                    <td><img src='./grenouille.JPG' width='100' height="100" id="i3" onMouseOver="changer('id',2)" onMouseOut="retourner('id',2)"></td>
+                    <td><img src='./lion.JPG' width='100' height="100" id="i4"  onMouseOver="changer('id',3)" onMouseOut="retourner('id',3)"></td>
+                </tr>
+                <tr>
+                    <td><img src='./mouton.JPG' width='100' height="100" id="i5" onMouseOver="changer('id',4)" onMouseOut="retourner('id',4)"></td>
+                    <td><img src='./ours.JPG' width='100' height="100" id="i6" onMouseOver="changer('id',5)" onMouseOut="retourner('id',5)"></td>
+                    <td><img src='./rat.JPG' width='100' height="100" id="i7" onMouseOver="changer('id',6)" onMouseOut="retourner('id',6)"></td>
+                    <td><img src='./renard.JPG' width='100' height="100" id="i8" onMouseOver="changer('id',7)" onMouseOut="retourner('id',7)"></td>
+                </tr>
+            </table>
+            <span style="font-family: sans-serif; color: green;
+            background-color: yellow;font-size: x-large;font-weight: bolder;" id="i0" >Nom
+            </span>
+        </div> 
+    </body>
+</html>
